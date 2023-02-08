@@ -1,1 +1,1 @@
-Relatório de fechamento diário, mensal e anual do Dolar e Ibovespa por email.  
+Relatório de fechamento diário, mensal e anual com grafico do Dolar e Ibovespa por email.  
