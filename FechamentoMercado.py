@@ -72,8 +72,8 @@ plt.show()
 def enviaemail(emails): 
   host = 'smtp.gmail.com'
   port = '587'
-  login = 'lheosantos@gmail.com'
-  senha = 'exukgesaegmqfaoa'
+  login = 'email@gmail.com'
+  senha = 'exukgesaegmqfaoa' #gerar senha de aplicativo no gerenciamento de conta do google
   
   server = smtplib.SMTP(host,port)
   server.ehlo()
@@ -103,7 +103,7 @@ def enviaemail(emails):
   '''
   
   email_msg = MIMEMultipart()
-  email_msg['From'] =  'lheosantos@gmail.com' #Quem está mandando o email
+  email_msg['From'] =  'email@gmail.com' #Quem está mandando o email
   email_msg['To'] = emails #Substitui um email fixo pelo vindo na função.
   email_msg['Subject'] = 'Relatório Diário'
   email_msg.attach(MIMEText(corpo,'plain'))
@@ -142,7 +142,7 @@ def enviaemail(emails):
   server.sendmail(email_msg['From'], email_msg['To'], email_msg.as_string())
   server.quit()
     
-emails = ['lheosantos@gmail.com']
+emails = ['email@gmail.com']
 
 for i in emails:
      enviaemail(i)
